@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0303fcc3-ea10-4b88-a203-9f64aca2892a}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <PythonWsgiHandler>{StartupModule}.wsgi_app</PythonWsgiHandler>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="notejam\static\css\style.css" />
+    <Content Include="notejam\static\css\tables.css" />
+    <Content Include="notejam\templates\base.html" />
+    <Content Include="notejam\templates\notes\create.html" />
+    <Content Include="notejam\templates\notes\delete.html" />
+    <Content Include="notejam\templates\notes\edit.html" />
+    <Content Include="notejam\templates\notes\form.html" />
+    <Content Include="notejam\templates\notes\list.html" />
+    <Content Include="notejam\templates\notes\view.html" />
+    <Content Include="notejam\templates\pads\create.html" />
+    <Content Include="notejam\templates\pads\delete.html" />
+    <Content Include="notejam\templates\pads\edit.html" />
+    <Content Include="notejam\templates\pads\form.html" />
+    <Content Include="notejam\templates\pads\note_list.html" />
+    <Content Include="notejam\templates\user.html" />
+    <Content Include="notejam\templates\users\forgot_password.html" />
+    <Content Include="notejam\templates\users\settings.html" />
+    <Content Include="notejam\templates\users\signin.html" />
+    <Content Include="notejam\templates\users\signup.html" />
+    <Content Include="notejam\templates\_helpers.html" />
+    <None Include="Properties\PublishProfiles\flask20210515000907 - Web Deploy.pubxml" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db.py" />
+    <Compile Include="notejam\config.py" />
+    <Compile Include="notejam\forms.py" />
+    <Compile Include="notejam\models.py" />
+    <Compile Include="notejam\views.py" />
+    <Compile Include="notejam\wsgi.py" />
+    <Compile Include="notejam\__init__.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="tests.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="notejam" />
+    <Folder Include="notejam\static\" />
+    <Folder Include="notejam\static\css" />
+    <Folder Include="notejam\templates" />
+    <Folder Include="notejam\templates\notes" />
+    <Folder Include="notejam\templates\pads" />
+    <Folder Include="notejam\templates\users" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
