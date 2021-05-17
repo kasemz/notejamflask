@@ -21,5 +21,5 @@ This application in its originaly is built as a monolith having a stateless webs
 
 
 **Suggusted new architecture**
-https://github.com/kasemz/notejamflask/blob/image/notejam.jpg
+![alt text](https://github.com/kasemz/notejamflask/blob/image/notejam.jpg)
 
