@@ -13,11 +13,18 @@ This application in its originaly is built as a monolith having a stateless webs
 **To Improve scalability, security and devlopment**
 
 1- the database has been decoupled and replaced by an Azure SQL Database.
+
 2- the application is packed to Docker image and sent Azure Container register to be deployed to Azure as Webapp container based more over how to deploy can be found on (https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java)
+
 3- Azure Kubernetes is also implemented to improve scalability
+
 4- Monitoring is garanted by sending the logs to log Analytics workspace.
+
 5- It is also possible to store connections strings and key certificates in an **Azure Key Vault**.
-6- **Implementing WAF** ( Web application firewall) which acts as Load balancer and firewall, might improve security.
+
+6- Backups are available on Azure in different stages and Azure platform support many options of HA and BCDR.
+
+7- **Implementing WAF** ( Web application firewall) which acts as Load balancer and firewall, might improve security.
 **Benefits**
 This section describes the core benefits that WAF on Application Gateway provides.
 
