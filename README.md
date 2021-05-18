@@ -65,7 +65,9 @@ Inspect JSON and XML in the request body
 
 To try the Notejam application working on Azure, just click the deploy to Azure below, please note that this solution currently is docker based application that is hosted on ACR.
 
-the deployment currently doesnot support all the features in the architechre, it is just a POC to show how to move an application to the cloud and the above solution is addressing the road map. 
+the deployment currently doesnot support all the features in the architechre, it is just a POC to show how to move an application to the cloud and the above solution is addressing the road map.
+
+**Want to see how the application is running in Azure** (https://notejama.azurewebsites.net)
 
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fkasemz%2Fnotejamflask%2FARM%2Ftemplate.json)
