@@ -61,3 +61,6 @@ Inspect JSON and XML in the request body
 **Suggusted new architecture**
 ![alt text](https://github.com/kasemz/notejamflask/blob/image/notejam.jpg)
 
+**Deploy**
+![Deploy to Azure](https://aka.ms/deploytoazurebutton)
+
