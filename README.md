@@ -62,5 +62,7 @@ Inspect JSON and XML in the request body
 ![alt text](https://github.com/kasemz/notejamflask/blob/image/notejam.jpg)
 
 **Deploy**
+
+
 ![Deploy to Azure](https://aka.ms/deploytoazurebutton)
 
